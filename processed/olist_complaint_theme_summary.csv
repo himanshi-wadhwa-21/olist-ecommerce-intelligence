@@ -1,0 +1,19 @@
+delivery_performance,complaint_themes,Unique_Reviews,Group_Total,Percentage
+Late,Customer Service,459,2053,22.36
+Late,Delivery Issues,1775,2053,86.46
+Late,Missing Items,33,2053,1.61
+Late,Packaging Issues,22,2053,1.07
+Late,Price and Value,30,2053,1.46
+Late,Product Information,38,2053,1.85
+Late,Product Quality,213,2053,10.38
+Late,Refund and Returns,102,2053,4.97
+Late,Wrong Product,14,2053,0.68
+On Time or Early,Customer Service,912,4252,21.45
+On Time or Early,Delivery Issues,1797,4252,42.26
+On Time or Early,Missing Items,553,4252,13.01
+On Time or Early,Packaging Issues,295,4252,6.94
+On Time or Early,Price and Value,116,4252,2.73
+On Time or Early,Product Information,355,4252,8.35
+On Time or Early,Product Quality,968,4252,22.77
+On Time or Early,Refund and Returns,836,4252,19.66
+On Time or Early,Wrong Product,219,4252,5.15
