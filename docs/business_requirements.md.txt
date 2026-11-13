@@ -1,0 +1,70 @@
+# Business Requirements
+
+## Project Overview
+
+The Olist E-commerce Customer & Operations Intelligence project analyses customer reviews, delivery performance, product revenue and customer complaint patterns.
+
+The purpose is to turn raw e-commerce data into useful business insights that can help teams understand customer experience and identify areas for operational improvement.
+
+## Business Problem
+
+An e-commerce business needs to understand more than how many orders it receives or how much revenue it generates.
+
+Customer feedback and delivery performance can reveal problems that may not be visible through sales figures alone.
+
+The project explores questions such as:
+
+- How are customers rating their shopping experience?
+- What is the overall sentiment expressed in written reviews?
+- Are late deliveries associated with more negative customer feedback?
+- Which complaint themes appear most frequently?
+- How does customer experience change over time?
+- Which areas should the business investigate first?
+
+## Project Objectives
+
+1. Analyse customer reviews and ratings to understand customer experience.
+2. Use sentiment analysis to classify written customer feedback.
+3. Compare customer feedback across delivery performance groups.
+4. Identify recurring complaint themes.
+5. Analyse product revenue and other e-commerce performance indicators.
+6. Present the findings through an interactive Power BI report.
+
+## Scope of Analysis
+
+The project includes:
+
+- Exploratory analysis of Olist e-commerce data.
+- SQL-based data querying and analysis.
+- Python-based data preparation and analysis.
+- Sentiment classification of written customer reviews.
+- Exploratory keyword-based complaint categorisation.
+- Power BI dashboards for customer experience, AI insights, delivery intelligence, complaint analysis and executive reporting.
+
+## Expected Business Value
+
+The analysis is intended to help business teams:
+
+- Identify delivery-related customer experience problems.
+- Understand the main sources of customer dissatisfaction.
+- Monitor customer sentiment and ratings.
+- Prioritise recurring complaint areas for further investigation.
+- Support operational decisions using data rather than assumptions.
+
+## Intended Users
+
+The report may be useful to:
+
+- Business analysts
+- E-commerce operations teams
+- Customer experience teams
+- Customer support managers
+- Business and management stakeholders
+
+## Limitations
+
+The analysis is based on the available dataset and does not represent every possible customer interaction.
+
+Sentiment classification and complaint categorisation are automated analytical methods and may contain classification errors. Complaint themes are exploratory and may overlap.
+
+The findings indicate patterns and relationships in the data. They should not be treated as proof of cause and effect.

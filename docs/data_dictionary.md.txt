@@ -1,0 +1,109 @@
+# Data Dictionary
+
+## Dataset Overview
+
+This project uses the Olist Brazilian E-Commerce Public Dataset. It contains information about customers, orders, payments, products, sellers, delivery and customer reviews.
+
+The original dataset consists of nine CSV files.
+
+## Source Datasets
+
+**olist_customers_dataset**  
+Contains customer information, including customer identifiers, location and ZIP code details.
+
+**olist_geolocation_dataset**  
+Contains geographical information associated with Brazilian ZIP code prefixes.
+
+**olist_order_items_dataset**  
+Contains order item details, including products, sellers, prices and freight values.
+
+**olist_order_payments_dataset**  
+Contains payment information associated with orders, including payment methods and payment values.
+
+**olist_order_reviews_dataset**  
+Contains customer review information, including review identifiers, order identifiers, review scores, comments and review dates.
+
+**olist_orders_dataset**  
+Contains order-level information, including order status and relevant purchase, approval, delivery and estimated delivery dates.
+
+**olist_products_dataset**  
+Contains product information, including product identifiers and product attributes.
+
+**olist_sellers_dataset**  
+Contains seller identifiers and location information.
+
+**product_category_name_translation**  
+Provides English translations for product category names originally recorded in Portuguese.
+
+## Important Identifiers
+
+The following identifiers are important when connecting datasets:
+
+- `order_id`: Identifies an order.
+- `customer_id`: Identifies a customer record.
+- `customer_unique_id`: Identifies a customer across orders.
+- `review_id`: Identifies a customer review.
+- `product_id`: Identifies a product.
+- `seller_id`: Identifies a seller.
+
+## Important Analytical Fields
+
+**review_score**  
+The customer's rating for an order, on a scale from 1 to 5.
+
+**review_comment_message**  
+The written comment provided by the customer. Written comments are used for sentiment analysis.
+
+**order_status**  
+Indicates the current or recorded status of an order.
+
+**order_purchase_timestamp**  
+The date and time when the order was purchased.
+
+**order_delivered_customer_date**  
+The recorded date and time when the order was delivered to the customer.
+
+**order_estimated_delivery_date**  
+The estimated delivery date for the order.
+
+**price**  
+The price of an individual product item.
+
+**freight_value**  
+The freight charge associated with an order item.
+
+## Derived Analytical Fields
+
+Some fields used in the analysis are created during data preparation rather than being present in the original dataset.
+
+**actual_delivery_days**  
+Calculated using the difference between the delivery date and purchase date.
+
+**delay_days**  
+Calculated using the difference between the actual delivery date and estimated delivery date.
+
+**delivery_performance**  
+Groups deliveries into performance categories, such as Late and Early or on time.
+
+**ai_sentiment**  
+The sentiment category predicted for a written review: Positive, Neutral or Negative.
+
+**complaint_themes**  
+Exploratory complaint categories assigned through keyword-based text classification.
+
+## Data Preparation Notes
+
+- The original CSV files are retained separately from processed analytical files.
+- Reviews are matched with their corresponding orders for delivery analysis.
+- Sentiment analysis is performed on written customer comments.
+- Complaint theme classification is exploratory and may assign multiple themes to one review.
+- Product revenue is calculated using product price, excluding freight.
+- Care is taken when joining order-level and order-item-level data to avoid duplicating order-level values.
+
+## Data Limitations
+
+Some records may have missing delivery dates or written review comments.
+
+The sentiment analysis covers written reviews rather than every review score in the original dataset.
+
+Derived fields and classifications depend on the preparation and analysis steps documented in the project notebooks and SQL scripts.
